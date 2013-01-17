@@ -6,6 +6,6 @@ TESTS="$TESTS webgateway.RepositoryApiAsAuthorTest"
 TESTS="$TESTS webgateway.ManagedRepositoryApiAsAuthorTest"
 TESTS="$TESTS webgateway.RepositoryApiPermissionsTest"
 TESTS="$TESTS webgateway.ManagedRepositoryApiPermissionsTest"
-TESTS="$TESTS webgateway.ManagedRepositoryApiListTest"
+TESTS="$TESTS webgateway.ManagedRepositoryApiCrossGroupTest"
 
 python omeroweb/manage.py test $TESTS
