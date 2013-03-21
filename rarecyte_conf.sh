@@ -6,5 +6,6 @@ omero config set omero.web.debug True
 omero config set omero.web.application_server development
 omero config set omero.web.apps '["rarecyte"]'
 omero config set omero.web.login_view rarecyte_login
+omero config set omero.web.index_view rarecyte_index
 omero config set omero.web.databases '{"default":{"ENGINE":"django.db.backends.sqlite3", "NAME":"db.sqlite3"}}'
 omero config get
