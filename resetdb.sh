@@ -1,5 +1,4 @@
-cd ~/omero/config
-source env.sh
+pushd ~/omero/config
 ./conf.sh
 dropdb omero
 createdb -O omero omero
@@ -9,3 +8,4 @@ ls -l *.sql
 psql -h localhost -U omero omero < *.sql
 rm -fR ~/var/omero.data/.omero ~/var/omero.data/* ~/omero/openmicroscopy/dist/var
 ./conf.sh
+popd
